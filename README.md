@@ -2,35 +2,39 @@
 
 A memorial data visualization displaying the names and ages of children (ages 0–18) killed in Gaza, based on official Ministry of Health records.
 
-## Data Source
-- **Source**: [Airwars - Ministry of Health Gaza List](https://airwars.org/moh-list/)
-- **Documentation**: [Airwars Explanation & Methodology](https://airwars.org/moh-list/)
-- **Series**: Part 1 of 30 (Full Roll)
+## Data Source & Attribution
+- **Primary Source**: [Palestinian Ministry of Health Gaza List](https://airwars.org/moh-list/) via Airwars
+- **Methodology**: [Airwars Documentation](https://airwars.org/moh-list/)
+- **Dataset**: Part 1 of 30 (Full Roll)
+- **Records**: ~19,771 individuals aged 0–18
+
+**Data Rights**: The names and demographic data belong to the Palestinian Ministry of Health. This repository hosts a visualization of that public dataset; the data itself is not owned or licensed by this project.
 
 ## About This Project
-This repository contains a single-page HTML memorial that cycles through approximately **19,771 names**, displaying:
-- Name in Arabic (original)
-- Name in English (transliterated)
+This single-page memorial cycles through names to humanize statistical figures. Each entry displays:
+- Arabic name (original)
+- English transliteration
 - Age at time of death
 
-The visualization uses a minimalist, reverent design with a slow fade animation (5-second intervals) to allow each name to be seen individually.
+**Display**: 5-second intervals with fade animations. RTL layout optimized for Arabic text.
 
-## How to View
-Since the dataset is large (19k+ records), GitHub cannot render the preview directly.
+## Viewing Instructions
+**⚠️ File Size Notice**: Due to the large dataset (~20k records), GitHub cannot preview this file. 
 
-**Live Version**: [Enable GitHub Pages](https://pages.github.com/) in your repository settings to serve the HTML file.
+**To view the animation:**
+1. **GitHub Pages**: Enable Pages in repo settings → visit the live URL
+2. **Local**: Download `names-still-growing.html` and open in any browser (no server required)
 
-**Local View**: Download `names-still-growing.html` and open it in any modern web browser.
+## Technical
+- **Format**: Self-contained HTML5 (vanilla JS/CSS)
+- **Dependencies**: None (offline-capable)
+- **Data Format**: Embedded JSON array
+- **Language**: Arabic (RTL) + English
 
-## Technical Details
-- **Format**: Single-file HTML5 with embedded CSS/JavaScript
-- **Data**: JSON array embedded in vanilla JavaScript (no external dependencies)
-- **Language**: Arabic (RTL) with English transliterations
-- **Animation**: CSS fade transitions, auto-advancing every 5 seconds
-
-## Context
-This data represents the Ministry of Health Gaza's official list of fatalities under age 18. For full context on data collection methodology, verification processes, and updates, please refer to the [Airwars methodology page](https://airwars.org/moh-list/).
+## License
+- **Visualization Code**: [MIT License](./LICENSE) (see file)
+- **Data**: © Palestinian Ministry of Health, compiled by Airwars. Used for memorial/educational purposes.
 
 ---
 
-*This is a memorial project intended to humanize statistical data. Each number represents an individual life.*
+*This is a memorial project. Each number represents an individual life.*
